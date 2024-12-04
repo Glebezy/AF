@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
     <style>
-      /* Основной стиль для настольных компьютеров */
-      .responsive-div {
-        width: 800px;
-        height: 400px;
-      }
-    
-      /* Стиль для устройств с шириной экрана 600px и меньше */
-      @media (max-width: 600px) {
-        .responsive-div {
-          width: 100%;  /* Занимает всю ширину экрана */
-          height: auto; /* Высота адаптируется к содержимому */
-          background-color: lightcoral;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
-      }
+
+        .header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+
+        .box {
+            background-color: lightblue;
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                flex: 1 1 100%;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="responsive-div">
+    <div class="header">
             <ins id="place_151923640949960014"></ins><script type="text/javascript" async src="https://adsfin.net/place/151923640949960014/"></script>
     </div>
-  <div style="height: 5000px; width: 700px; background-color: green;"></div>
-    <div>
+    
+  <div class="container" style="height: 5000px; width: 700px; background-color: green;"></div>
+    
+    <div class="box">
   <ins id="place_151923710750407015"></ins><script type="text/javascript" async src="https://adsfin.net/place/151923710750407015/"></script>
     </div>
+
 </body>
